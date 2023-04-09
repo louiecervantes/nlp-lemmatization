@@ -33,7 +33,7 @@ def app():
             lemmatizer_names = ['NOUN LEMMATIZER', 'VERB LEMMATIZER']
             formatted_text = '{:>24}' * (len(lemmatizer_names) + 1)
             res = '\n' + formatted_text.format('INPUT WORD', *lemmatizer_names) + '\n' + '='*75
-            st.write(res)
+            st.text(res)
             
             
    
