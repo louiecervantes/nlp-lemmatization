@@ -34,6 +34,15 @@ def app():
             formatted_text = '{:>24}' * (len(lemmatizer_names) + 1)
             res = '\n' + formatted_text.format('INPUT WORD', *lemmatizer_names) + '\n' + '='*75
             st.text(res)
+            input_words = user_input.split()
+            
+            # Lemmatize each word and display the output
+            for word in input_words:
+                output = [word, lemmatizer.lemmatize(word, pos='n'),
+                lemmatizer.lemmatize(word, pos='v')]
+                res = formatted_text.format(*output)
+                st.text(res)
+
             
             
    
