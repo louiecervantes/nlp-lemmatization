@@ -18,10 +18,10 @@ def app():
     st.write('The lemmatization process uses a vocabulary and morphological analysis of words. It obtains the base forms by removing the inflectional word endings such as ing or ed. This base form of any word is known as the lemma.')
     
     st.subheader('List of word to lemmatize')
-    st.write('A list of words is already provided in the input box. Ypu can use this list or replace the list with your own.')
+    st.write('A list of words is already provided in the input box. You can use this list or replace the list with your own lost of words.')
     
     # Create a multiline text field
-    user_input = st.text_area('Paste the block of text here', 'writing calves be branded horse randomize possibly provision hospital kept scratchy code', height=20)
+    user_input = st.text_area('Paste the block of text here', 'writing \ncalves \nbe \nbranded \nhorse \nrandomize \npossibly \nprovision \nhospital \nkept \nscratchy \ncode', height=20)
     from nltk.stem import wordnet
     from nltk.stem import WordNetLemmatizer
 
