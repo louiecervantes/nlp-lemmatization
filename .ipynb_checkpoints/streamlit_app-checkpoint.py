@@ -21,7 +21,7 @@ def app():
     st.write('A list of words is already provided in the input box. You can use this list or replace the list with your own lost of words.')
     
     # Create a multiline text field
-    user_input = st.text_area('Input the list of words here', 'writing \ncalves \nbe \nbranded \nhorse \nrandomize \npossibly \nprovision \nhospital \nkept \nscratchy \ncode', height=270)
+    user_input = st.text_area('Input the list of words here', 'writing \ncalves \nbe \nbranded \nhorse \nrandomize \npossibly \nprovision \nhospital \nkept \nscratchy \ncode', height=290)
     from nltk.stem import wordnet
     from nltk.stem import WordNetLemmatizer
 
