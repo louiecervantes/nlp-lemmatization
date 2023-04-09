@@ -42,7 +42,7 @@ def app():
                 lemmatizer.lemmatize(word, pos='v')]
                 res = formatted_text.format(*output)
                 st.text(res)
-    st.write('We can see that the noun lemmatizer works differently than the verb lemmatizer when it comes to words like writing or calves. If you compare these outputs to stemmer outputs, you will see that there are differences too. The lemmatizer outputs are all meaningful whereas stemmer outputs may or may not be meaningful.')
+            st.write('We can see that the noun lemmatizer works differently than the verb lemmatizer when it comes to words like writing or calves. If you compare these outputs to stemmer outputs, you will see that there are differences too. The lemmatizer outputs are all meaningful whereas stemmer outputs may or may not be meaningful.')
             
             
    
